@@ -52,7 +52,7 @@
         </div>
         <div class="back">
           <img src="assets/images/bg-card-back.png" alt="" />
-          <div class="card-detail"><p>000</p></div>
+          <div class="card-detail"><p id="cvc-text">000</p></div>
         </div>
       </section>
       <form action="" class="inputs">
@@ -83,7 +83,7 @@
                 type="number"
                 name=""
                 id="date"
-                placeholder=" MM"
+                placeholder="MM"
                 min="1"
                 max="12"
               />
@@ -112,10 +112,35 @@
         </div>
         <button type="submit" class="field">Confirm</button>
       </form>
+      <div class="thankyou-card">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="80"
+          height="80"
+          fill="none"
+        >
+          <circle cx="40" cy="40" r="40" fill="url(#a)" />
+          <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+          <defs>
+            <linearGradient
+              id="a"
+              x1="-23.014"
+              y1="11.507"
+              x2="0"
+              y2="91.507"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#6348FE" />
+              <stop offset="1" stop-color="#610595" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <button id="continue-button" class="continue-button">Continue</button>
+      </div>
     </main>
 
     <!-- Completed state start -->
-
-    Thank you! We've added your card details Continue
   </body>
 </html>
